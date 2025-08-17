@@ -1,5 +1,12 @@
+Method:
+Started from the list of 491 candidates with all OER intermediates (412 unique OOH-slab systems, 408 unique OH-slab systems).
+First extracted all OOH-salb structures and calculated all bond lengths and angles.
+Then extracted all OH-slab structures and calculated all bond lengths.
+Then filtered according to criteria below.
 Key takeaways:
 1. The structures are stored as cartesian coordiantes.
 2. While all bond lengths match based on whether the structures were extracted with ASE (method 1) or pymatgen (method 2), the HOO bond angles were different.
-3. Filtering criteria for OOH: (1) OO bond length between 1.3-1.5 A (ideal: ~1.46 A); (2) OH bond length between 0.9-1.1 A (ideal: ~1 A); 
-(3) OOH bond angle between 95-115 degrees (ideal: ~104 degrees).
+3. Filtering criteria for OOH adsorbates: (1) OO bond length between 1.3-1.5 A (ideal: ~1.46 A); (2) OH bond length between 0.9-1.1 A (ideal: ~1 A); 
+(3) OOH bond angle between 95-115 degrees (ideal: ~104 degrees).  If these were not met, the OOH adsorbate(s) on the slab is inferred to be dissociated.
+4. Filtering criteria for OH adsorbates: OH bond length between 0.9-1.1 A (ideal: ~1 A).
+5. In both cases, if multiple adsorbates were present, the structure was considered 'correct' if only all adsorbates met the above criteria.
