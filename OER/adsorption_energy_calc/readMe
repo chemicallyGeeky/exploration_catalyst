@@ -1,1 +1,4 @@
-
+The csv file contains DFT energies (E_DFT) for the clean slab and slab with adsorbates.
+The uncorrected DFT energy or AE_DFT is calculated as:
+AE_DFT = (E_DFT (slab + adsorbate) - E_DFT(slab) - nads*E_DFT(free adsorbate))/nads
+where, nads = number of adsorbates.
