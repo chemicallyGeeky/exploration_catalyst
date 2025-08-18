@@ -1,6 +1,6 @@
 Method:
 Started from the list of 491 candidates with all OER intermediates (412 unique OOH-slab systems, 408 unique OH-slab systems).
-First extracted all OOH-salb structures and calculated all bond lengths and angles.
+First extracted all OOH-slab structures and calculated all bond lengths and angles.
 Then extracted all OH-slab structures and calculated all bond lengths.
 Then filtered according to criteria below.
 Key takeaways:
