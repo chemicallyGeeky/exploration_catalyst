@@ -1,0 +1,8 @@
+Duplicate adsorption energies in the OC2022 dataset
+
+Multiple adsorption energies may occur under the following conditions:
+(1) Candidates sharing the same bulk_id, miller_index, slab_sid, and nads
+(2) Candidates with the same bulk_id, miller_index, and slab_sid, but different nads
+(3) Candidates with the same bulk_id and miller_index, but different slab_sid
+
+This code identifies and flags such duplicate adsorption energies.
